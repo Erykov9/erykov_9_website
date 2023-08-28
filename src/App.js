@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Footer from "./pages/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
+import NotFound from "./pages/NotFound/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/about" element={<About/>} />
             <Route exact path="/contact" element={<Contact/>} />
             <Route exact path="/projects" element={<Projects/>} />
+            <Route path ="*" element={<NotFound/>} />
           </Routes>
         </div>
         <Footer/>

@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="wrapper">
         <div className="icons">
           {contactIcons.map((item) => (
-            <SingleContact item={item}/>
+            <SingleContact item={item} key={`contact-${item.id}`}/>
           ))}
         </div>
       </div>

@@ -7,7 +7,7 @@ const Projects = () => {
     <div className="projects-module">
       <h1>projects;</h1>
       <div className="wrapper">
-        {projectItems.map(item => <SingleProject project={item}/>)}
+        {projectItems.map(item => <SingleProject project={item} key={`projects-${item.id}`}/>)}
       </div>
     </div>
   )

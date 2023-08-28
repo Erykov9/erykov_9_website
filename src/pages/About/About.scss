@@ -16,17 +16,23 @@
   .icons {
     display: flex;
     flex-wrap: wrap;
-
-    i {
-      padding-right: 30px;
+    
+    span {
       transition: $transition;
-      font-size: 64px;
+      padding-bottom: 8px;
 
+      i {
+        padding-right: 30px;
+        font-size: 64px;
+      }
+        
       &:hover {
         color: $color-second;
         opacity: $opacity;
         transform: scale(1.15);
       }
     }
+
+
   }
 }

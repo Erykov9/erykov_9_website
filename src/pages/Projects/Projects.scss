@@ -39,6 +39,11 @@
           button {
             position: absolute;
             bottom: 5px;
+
+            &.secondary {
+              left: 130px;
+              
+            }
           }
 
           .hidden-stack {

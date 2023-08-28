@@ -14,7 +14,7 @@ const Main = () => {
             <h3>hey, I'm <span className="name">Eryk</span></h3>
             <h1>web developer</h1>
             <h2>W</h2>
-            <p>Tasting the joy of JavaScript and cooking in Every byte&bite. <span className="contact"><a href="mailto:szczepanekeryk@gmail.com">Contact me!</a></span></p>
+            <p>Tasting the joy of JavaScript and cooking in every byte&bite. <span className="contact"><a href="mailto:szczepanekeryk@gmail.com">Contact me!</a></span></p>
           </div>
         </div>
         <div className="btns-section">

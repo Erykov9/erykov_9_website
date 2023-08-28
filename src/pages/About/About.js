@@ -50,7 +50,7 @@ const About = () => {
       <h1>stack_&_tools;</h1>
       <div className="icons">
         {icons.map((icon) => (
-          <>{icon.content}</>
+          <span key={`icon-${icon.id}`}>{icon.content}</span>
         ))}
       </div>
       <p>

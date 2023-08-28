@@ -46,6 +46,7 @@ export const projectItems = [
     url: "http://path-finder-1.erykov9.repl.co/",
     description:
       "An application containing an algorithm for finding the shortest route from point A to point B. One of the first projects and the first one of such complexity. Written in pure VanillaJS. (It may take time or few tries to load page).",
+    github: "https://github.com/Erykov9/path-finder"
   },
   {
     id: 4,
