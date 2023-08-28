@@ -1,0 +1,42 @@
+@import "src/settings.scss";
+
+.navigation-module {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px 0;
+
+  .wrapper {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid $color-main;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 0 15px;
+        width: 28px;
+        height: 30px;
+        position: relative;
+
+        a {
+          font-size: 25px;
+        }
+
+        &:hover {
+          opacity: $opacity;
+          cursor: pointer;
+          color: $color-main;
+          transition: $transition;
+
+          span {
+            display: block;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+}

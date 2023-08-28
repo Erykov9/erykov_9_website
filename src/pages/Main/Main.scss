@@ -1,0 +1,185 @@
+@import "src/settings.scss";
+
+.main-module {
+  height: 70vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    .hello-section {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .text-wrapper {
+        position: relative;
+        font-family: $font-montserrat;
+
+        h1 {
+          padding-bottom: 10px;
+          border-bottom: 4px solid $color-main;
+          font-size: 5rem;
+          margin: 0;
+        }
+
+        h3 {
+          font-family: $font-courier;
+          color: grey;
+        }
+
+        h4 {
+          font-family: $font-courier;
+          font-size: 1.2rem;
+        }
+  
+        span {
+          &.contact {
+            color: $color-main;
+            cursor: pointer;
+            text-decoration: underline;
+            &:hover {
+              transition: $transition;
+              opacity: $opacity;
+            }
+          }
+
+          &.name {
+            color: $color-main;
+            text-decoration: none;
+            cursor: default;
+            background: linear-gradient(45deg, $color-main, $color-second);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
+        }
+
+        h2 {
+          position: absolute;
+          font-size: 9rem;
+          font-weight: 900;
+          color: rgba(102, 201, 26, 0.203)
+        }
+
+        h2 {
+          top: -50px;
+          left: -35px
+        }
+
+        h3 {
+          font-size: 3rem;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .btns-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      font-family: $font-montserrat;
+
+
+      .icons-wrapper {
+        padding-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        color: white;
+
+        &:hover {
+          &::after {
+            background-color: $color-second;
+            right: 155px;
+          }
+
+          a {
+            
+            padding-left: 10px;
+          }
+
+          i {
+            color: $color-second;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 48px;
+          right: 140px; 
+          width: 50px; 
+          height: 2px; 
+          background-color: grey;
+          transition: $transition;
+        }
+
+        a {
+          font-size: 34px;
+          padding: 5px;
+          cursor: pointer;
+          transition: $transition;
+          
+          i {
+            color: grey;
+            &:hover {
+              opacity: $opacity;
+              transition: $transition;
+            }
+          }
+        }
+      }
+
+      h2 {
+        font-family: $font-courier;
+        color: $color-main;
+        font-size: 3rem;
+        top: 30px;
+        opacity: $opacity;
+        margin: 5px 0;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-module {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .hello-section {
+        .text-wrapper {
+          h1 {
+            font-size: 4rem
+          }
+          h2 {
+            font-size: 8rem;
+            top: 20px;
+          }
+        }
+
+      }
+
+      .btns-section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          top: -40px;
+        }
+      }
+    }
+  }
+}

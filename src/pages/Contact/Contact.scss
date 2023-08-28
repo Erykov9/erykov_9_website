@@ -1,0 +1,125 @@
+@import "src/settings.scss";
+
+.contact-module {
+  padding: 40px;
+
+  h1 {
+    color: $color-main;
+    padding-bottom: 25px;
+    font-family: $font-courier;
+    font-size: 3rem;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px;
+      width: 100%;
+
+      .icon-item {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        word-break: break-all;
+        align-items: center;
+        border: 2px solid rgb(130, 130, 130);
+        margin: 15px;
+        padding: 85px 15px;
+        transition: $transition;
+        position: relative;
+
+        .hidden {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          top: 30%;
+          display: none;
+        }
+        
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          span {
+            transition: $transition;
+            
+            &.icon {
+              color: grey;
+              font-size: 48px;
+            }
+  
+            &.content {
+              color: grey;
+            }
+  
+            &.text {
+              color: grey;
+              font-family: $font-courier;
+            }
+          } 
+        }
+
+        &:hover {
+          box-shadow: 0 0 6px 2px rgb(130, 130, 130);
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.544);
+
+
+          .hidden {
+            display: flex;
+            transition: ease-in .2s;
+
+          }
+
+          span {
+            &.icon {
+              color: $color-second;
+              opacity: 0.2;
+              transform: scale(1.2);
+            }
+
+            &.text {
+              color: white;
+            }
+
+            &.content {
+              color: $color-second;
+            }
+          }
+        }
+
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-module {
+    .wrapper {
+      padding-top: 0;
+      .icons {
+        flex-direction: column;
+        align-items: center;
+
+        .icon-item {
+          padding: 65px 15px;
+          width: 60%;
+          min-width: 150px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import 'src/settings.scss';
+
+.footer-module {
+  padding-top: 16px;
+  min-height: 8.2vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-courier;
+  color: $color-second;
+}

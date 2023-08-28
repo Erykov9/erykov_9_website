@@ -1,0 +1,32 @@
+@import "src/settings.scss";
+
+.about-module {
+  padding: 40px;
+    
+  h1 {
+    color: $color-main;
+    font-size: 3rem;
+    font-family: $font-courier;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    i {
+      padding-right: 30px;
+      transition: $transition;
+      font-size: 64px;
+
+      &:hover {
+        color: $color-second;
+        opacity: $opacity;
+        transform: scale(1.15);
+      }
+    }
+  }
+}
