@@ -20,7 +20,7 @@ const Main = () => {
         <div className="btns-section">
           <h2>lets_meet;</h2>
           <div className="btns">
-            <button className="primary"><FontAwesomeIcon icon={faDownload} /> <a href="eryk_szczepanek_cv.pdf" download>Download CV</a></button>
+            <button className="primary"><FontAwesomeIcon icon={faDownload} /> <a href="IT_SZCZEPANEK_CV.pdf" download>Download CV</a></button>
             <button className="secondary" onClick={() => navigate('/projects')}>See Projects</button>
           </div>
           <div className="icons-wrapper">
