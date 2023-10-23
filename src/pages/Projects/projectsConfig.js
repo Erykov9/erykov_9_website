@@ -1,14 +1,14 @@
 export const projectItems = [
   {
     id: 1,
-    name: "Rentali",
+    name: "Rentali (in progress)",
     src: "/projects/images/rentali.png",
     alt: "Rentali project screenshot",
     stack: [
       "JavaScript",
       "React",
       "HTML5/CSS3",
-      "MySql",
+      "MySQL",
       "Bootstrap",
       "expressJS",
       "nodeJS",
@@ -16,7 +16,7 @@ export const projectItems = [
     ],
     url: "http://rentali.odev.pl/",
     description:
-      "Accommodation Rental Website. It features functionalities such as: property management from an administrative panel, individual points purchase, internal ranking optimization, data filtering, and more.",
+      "Accommodation Rental Website. It features functionalities such as: property management from an administrative panel, individual points purchase, internal ranking optimization, data filtering, and more. Working in four-person team.",
   },
   {
     id: 2,
@@ -27,13 +27,13 @@ export const projectItems = [
       "JavaScript",
       "React",
       "HTML5/CSS3",
-      "MySql",
+      "MySQL",
       "Bootstrap",
       "expressJS",
       "nodeJS",
       "Git",
     ],
-    url: "http://bezpieczny-schowek.odev.pl/",
+    url: "http://bezpiecznyschowek.pl/",
     description:
       "Container Reservation Website. Managing registrations from the administrative panel.",
   },
@@ -64,5 +64,25 @@ export const projectItems = [
     url: "http://msproschody.pl/",
     description:
       "A business card website for a company specializing in designing and crafting spiral staircases.",
+  },
+  {
+    id: 5,
+    name: "Table Tango (in progress)",
+    src: "/projects/images/tabletango.png",
+    alt: "Table Tango screenshot",
+    stack: [
+      "JavaScript",
+      "React",
+      "HTML5/CSS3",
+      "Bootstrap",
+      "expressJS",
+      "nodeJS",
+      "MySQL"
+    ],
+    url: "https://tabletango.onrender.com/",
+    description:
+      "My personal project for booking tables in a restaurant. It is still in progress yet I want to add more features such as selecting positions from menu. Due to lack of time, the first version of the project will be delayed.",
+    github: "https://github.com/Erykov9/table-reservation-client"
+
   },
 ];

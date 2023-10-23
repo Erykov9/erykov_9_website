@@ -22,18 +22,26 @@ body {
 
 .app-module {
   background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 
   .app-wrapper {
     background-color: rgba(0, 0, 0, 0.145);
     background-image: url("../public/background2.png");
     background-size: cover;
-    margin: 0 40px;
+    width: 90%;    
     border-radius: 5px;
     box-shadow: 0px 0px 8px 1px $color-main;
     overflow-x: scroll;
-    height: 80vh;
+    height: 81.4vh;
     animation: shadow 1s infinite;
+
+    @media (max-width: 768px ) {
+      width: 98%;
+    }
   }
 
   @keyframes shadow {
